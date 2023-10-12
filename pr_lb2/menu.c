@@ -16,6 +16,7 @@ int main() {
 
     scanf("%d", &num_solution); 
     input_array(array, array_size);
+    result(num_solution,array, array_size);
     return 0;
 }
 
