@@ -5,7 +5,8 @@
 #include "multi_before_and_after_negative.h"
 
 #define MAX_SIZE 20
-
+#define OUTPUT "%d\n"
+    
 void input_array(int *array, int *array_size);
 void result(int num_solution, int *array, int array_size);
 
@@ -29,16 +30,16 @@ void input_array(int *array, int *array_size){
 void result(int num_solution, int *array, int array_size){
     switch (num_solution) {
     case 0:
-        printf("%d\n", index_first_negative(array, array_size));
+        printf(OUTPUT, index_first_negative(array, array_size));
         break;
     case 1:
-        printf("%d\n", index_last_negative(array, array_size));
+        printf(OUTPUT, index_last_negative(array, array_size));
         break;
     case 2:
-        printf("%d\n", multi_between_negative(array, array_size));
+        printf(OUTPUT, multi_between_negative(array, array_size));
         break;
     case 3:
-        printf("%d\n", multi_before_and_after_negative(array, array_size));
+        printf(OUTPUT, multi_before_and_after_negative(array, array_size));
         break;
     default:
         printf("%s\n", "Данные некорректны");
